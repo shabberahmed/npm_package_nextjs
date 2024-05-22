@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "module": "esnext",
+    "target": "es6",
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "moduleResolution": "bundler",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*":["./*"],
+      "@components/*": ["src/components/*"],
+   "@azuga-bms/azuga-design-system/nexus": ["node_modules/@azuga-bms/azuga-design-system/nexus/*"]
+},
+    "types": ["node", "react", "react-dom"]
+  },
+  // "include": ["src/**/*"],
+    "include": ["src/**/*", "./src/index.ts"],
+  "exclude": ["node_modules", "dist"]
+}
+
+// {
+//   "compilerOptions": {
+//     "jsx": "react",
+//     "lib": ["dom", "ES2015"],
+//     "module": "Node16",
+//     "target": "ESNext",
+//     "rootDir": "src",
+//     "outDir": "dist",
+//     "composite": false,
+//     "declaration": true,
+//     "declarationDir": "dist",
+//     "declarationMap": true,
+//     "esModuleInterop": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "inlineSources": false,
+//     "isolatedModules": true,
+//     "moduleResolution": "node16",
+//     "noUnusedLocals": false,
+//     "noUnusedParameters": false,
+//     "preserveWatchOutput": true,
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "baseUrl": ".",
+//     "paths": {
+//       "@components/*": ["src/components/*"],
+//       "@azuga-bms/azuga-design-system/nexus": ["node_modules/@azuga-bms/azuga-design-system/nexus/*"]
+//     },
+//     "allowSyntheticDefaultImports": true,
+//     "resolveJsonModule": true,
+//     "types": ["node", "react", "react-dom"]
+//   },
+//   "include": ["src/**/*", "./src/index.ts"],
+//   "exclude": ["node_modules", "dist"]
+// }
+

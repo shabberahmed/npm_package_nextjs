@@ -1,0 +1,1 @@
+export {default as Azuga}  from './components/Azuga'

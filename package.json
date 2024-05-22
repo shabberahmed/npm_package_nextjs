@@ -1,0 +1,80 @@
+{
+  "name": "next-ui-1",
+  "description": "A React component library for building modern web applications using Tailwind CSS.",
+  "version": "0.0.2",
+  "license": "MIT",
+  "author": {
+    "name": "shaik ahmed"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "nextjs",
+    "components"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist/**",
+    "README.md"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "rm -rf dist && rollup -c rollup.config.mjs",
+    "dev": "pnpm run build --watch",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@azuga-bms/azuga-design-system": "0.0.13",
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest-axe": "^3.5.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.19",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-config-turbo": "^1.10.13",
+    "eslint-plugin-react": "7.29.4",
+    "jest-axe": "^8.0.0",
+    "jest-environment-jsdom": "^29.6.4",
+    "next": "14.2.3",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.28.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-preserve-directives": "^0.2.0",
+    "rollup-plugin-typescript-paths": "^1.4.0",
+    "tsc-alias": "^1.8.7",
+    "tslib": "^2.6.2",
+    "typescript": "^5",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.28.5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@rollup/plugin-replace": "^5.0.5",
+    "@vitejs/plugin-react": "^4.2.1",
+    "react-icons": "^5.2.1",
+    "stream-browserify": "^3.0.0"
+  }
+}

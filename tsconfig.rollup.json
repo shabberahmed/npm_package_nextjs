@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "jsx": "react-jsx",
+      "allowSyntheticDefaultImports": true,
+      "module": "ESNext",
+      "declaration": true,
+      "outDir": "./dist",
+      "paths": {
+        "@components/*": ["src/components/*"],
+        "@azuga-bms/azuga-design-system/nexus": ["node_modules/@azuga-bms/azuga-design-system/nexus/*"]
+
+      }
+      
+    },
+    "exclude": ["node_modules", "dist"]
+  }
